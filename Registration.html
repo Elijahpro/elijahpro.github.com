@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration form</title>
+	<link rel="stylesheet" href="myhome.css" type="text/css" />
+</head>
+<body>
+
+<div id="header">
+<div id="logo"><a href="index.html"><img src="images/myHome.png"width="250px" height="110px" /></a>
+</div>
+	<div id="nav"> 
+	    <ul>
+		  <li class="button"><a href="mainPage.html">My-home</a></li>
+	 	  <li class="button"><a href="Relstate.html">Relsate</a></li>
+		  <li class="button"><a href="Registration.html">Registration</a></li>
+		  <li class="button"><a href="contact.html">Contact</a></li>
+		</ul>
+
+	</div>
+
+
+  	   <!-- <h1 id="title">My-Home OnlineSales</h1>-->
+</div>
+
+<div class="aa">
+	<h2 id="a">Registration</h2>
+	<form method="post" action="connection.php">
+		FirstName: <input type="text" name="Fname" size="10 " placeholder="Your Name..." maxlength="40"><br>
+		LastName: <input type="text" name="Lname" size="20" placeholder="Father Name..." maxlength="40"><br>
+		Gender: <input type="radio" name="gender" value="M">Male<input type="radio" name="gender" value="F">Female<br>
+		Age: <select name="age" >
+				<option value="0-29">Under 20</option>
+				<option value="30-50"> between 30-50</option>
+				<option value="50+">Under 20</option>
+		   </select><br><br><br>
+		Address: <input type="text" name="address" size="30" placeholder="Current Address..." maxlength="60"><br>
+		ComanyName: <input type="text" name="Cname" size="30" placeholder="Compay" maxlength="60"><br>
+		Email: <input type="text" name="email" placeholder="company email" maxlength="60"><br>
+		PhoneNumber: <select name="PhoneCode" required>
+			      <option selected hidden value="">Select Code</option>
+				  <option value="250">250</option>  
+				  <option value="251">251</option>
+				  <option value="255">255</option>
+				  <option value="277">277</option>
+			      <option value="279">279</option>
+				  <option value="280">280</option>
+				  <option value="281">281</option>
+				  <option value="279">279</option>
+			 </select>
+			 <input type="PhoneNumber" name="phone" size="20" placeholder="929****" maxlength="30"><br>
+		Commeents: <textarea name="comment" rows="5" cols="30" placeholder="Any comment..." maxlength="500"></textarea><br>
+		          <input type="submit" name="submit" value="submit">
+
+	</form>
+</div>
+	
+</body>
+</html>
